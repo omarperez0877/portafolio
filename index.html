@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/miestilo.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <a href="mi-curriculo.pdf" class="btn-cv" download>
+            <i>&#128462;</i> Descargar CV
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Acerca de mí</a></li>
+            <li><a href="#hobbies-skills">Pasatiempos y Habilidades Blandas</a></li>
+            <li><a href="#education">Formaciones y Cursos</a></li>
+            <li><a href="#experience">Experiencia en Programación</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>Acerca de mí</h2>
+        <p>¡Hola! Soy [Tu Nombre], un desarrollador apasionado por crear soluciones innovadoras y funcionales. Siempre estoy en busca de aprender y mejorar mis habilidades técnicas.</p>
+    </section>
+
+    <section id="hobbies-skills" class="hobbies-skills">
+        <h2>Pasatiempos y Habilidades Blandas</h2>
+        <p>Me encanta leer, aprender sobre tecnología y trabajar en equipo. Mis habilidades blandas incluyen comunicación efectiva, adaptabilidad y resolución de problemas.</p>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Formaciones y Cursos</h2>
+        <p>He completado cursos en desarrollo web, diseño de interfaces y programación en plataformas como Alura y otras academias reconocidas.</p>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experiencia en Programación</h2>
+        <p>He trabajado en proyectos utilizando tecnologías como HTML5, CSS3, JavaScript y frameworks como React y Vue.js. Cada proyecto me ha permitido aprender y mejorar mis habilidades técnicas.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
