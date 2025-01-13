@@ -16,11 +16,13 @@ header {
 
 header h1 {
     margin: 0;
-    flex: 1 1 auto; /* Permite que el título ocupe todo el espacio disponible a la izquierda */
+    flex: 1 1 auto;
+    /* Permite que el título ocupe todo el espacio disponible a la izquierda */
 }
 
 .btn-cv {
-    flex: 0 0 auto; /* Evita que el botón se redimensione */
+    flex: 0 0 auto;
+    /* Evita que el botón se redimensione */
     padding: 0.5rem 1rem;
     background-color: #fff;
     color: #1e90ff;
@@ -85,8 +87,10 @@ section {
 
 .about-content {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Distribuye contenido */
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Distribuye contenido */
     gap: 1rem;
 }
 
@@ -102,7 +106,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    flex: 1; /* Ocupa el espacio restante */
+    flex: 1;
+    /* Ocupa el espacio restante */
 }
 
 .personal-info h2 {
@@ -123,12 +128,15 @@ section {
 
 .social-links a {
     text-decoration: none;
-    color: #333; /* Color de los íconos */
-    font-size: 36px; /* Tamaño de los íconos */
+    color: #333;
+    /* Color de los íconos */
+    font-size: 36px;
+    /* Tamaño de los íconos */
 }
 
 .social-links a:hover {
-    color: #0077b5; /* Color al pasar el puntero */
+    color: #0077b5;
+    /* Color al pasar el puntero */
 }
 
 .about-me {
@@ -146,85 +154,60 @@ section {
     -o-border-radius: 5px;
 }
 
-.about-me p{
+.about-me p {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Distribuye contenido */
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Distribuye contenido */
     gap: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
 }
 
-#skills {
-    padding: 50px 0;
+#skills, #hobbies {
     background-color: #f4f4f4;
-  }
-  
-  #skills h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    text-align: center;
-  }
-  
-  .skill-item i {
-    font-size: 60px;
-    color: #4a90e2;
-    margin-bottom: 10px;
-  }
-  
-  .skill-item p {
-    font-size: 14px;
-    color: #333;
-  }
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
 
-  #hobbies {
-    background-color: #f4f4f4;
-    padding: 40px 0;
-  }
-  
-  #hobbies .container {
+#skills .container, #hobbies .container {
     text-align: center;
-  }
-  
-  #hobbies h2 {
+}
+
+#skills h2, #hobbies h2 {
+    text-align: justify;
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 600;
-  }
-  
-  .hobbies-grid {
+}
+
+.skills-grid, .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-  }
-  
-  .hobby-item {
+}
+
+.skill-item, .hobby-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .hobby-item i {
+}
+
+.skill-item i, .hobby-item i {
     font-size: 50px;
     color: #4a90e2;
     margin-bottom: 10px;
-  }
-  
-  .hobby-item p {
+}
+
+.skill-item p, .hobby-item p {
     font-size: 16px;
     color: #333;
-  }
-  
-.hobbies-skills, .education, .experience, .contact {
+}
+
+.education, .experience, .contact {
     background-color: #f4f4f4;
     margin-bottom: 1rem;
     border-radius: 5px;
