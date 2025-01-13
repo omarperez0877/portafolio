@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Personal</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/miestilo.css">
 </head>
+
 <body>
     <header>
         <h1>Bienvenido a Mi Portafolio</h1>
@@ -17,8 +20,9 @@
 
     <nav>
         <ul>
-            <li><a href="#about">Acerca de mí</a></li>
-            <li><a href="#hobbies-skills">Pasatiempos y Habilidades Blandas</a></li>
+            <li><a href="#about-me">Acerca de mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#hobbies">Pasatiempos</a></li>
             <li><a href="#education">Formaciones y Cursos</a></li>
             <li><a href="#experience">Experiencia en Programación</a></li>
             <li><a href="#contact">Contacto</a></li>
@@ -26,23 +30,251 @@
     </nav>
 
     <section id="about" class="about">
-        <h2>Acerca de mí</h2>
-        <p>¡Hola! Soy [Tu Nombre], un desarrollador apasionado por crear soluciones innovadoras y funcionales. Siempre estoy en busca de aprender y mejorar mis habilidades técnicas.</p>
+        <div class="about-content">
+            <div class="personal-info">
+                <h2>Hola, mi nombre es Omar Gerardo Pérez Morales y soy desarrollador de software web y de escritorio,
+                    enfocado en UX/UI.</h2>
+                <h3>Tengo 47 años y soy de México. Soy un un desarrollador apasionado por crear soluciones innovadoras y
+                    funcionales. Siempre estoy en busca de aprender y mejorar mis habilidades blandas y ténicas
+                    profesionales.</h3>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/omar-gerardo-p%C3%A9rez-morales-7b919b58/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/OmarGPerezM/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/omargerardoperezmorales/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/omarperez0877" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="profile-picture">
+                <img src="assets/img/Foto_Omar.jfif" alt="Foto de Perfil">
+            </div>
+        </div>
     </section>
 
-    <section id="hobbies-skills" class="hobbies-skills">
-        <h2>Pasatiempos y Habilidades Blandas</h2>
-        <p>Me encanta leer, aprender sobre tecnología y trabajar en equipo. Mis habilidades blandas incluyen comunicación efectiva, adaptabilidad y resolución de problemas.</p>
+    <section id="about-me" class="about-me">
+        <h2>Acerca de Mí</h2>
+        <p>Me encanta la tecnología y la programación. Soy un apasionado por la educación y la divulgación científica.
+            Me gusta trabajar en equipo y aprender de los demás.</p>
+        <p>Soy un desarrollador web con una amplia trayectoria en el mundo de la programación y la tecnología. A lo
+            largo de los años, he trabajado en diversos proyectos, desde la creación de portafolios personales hasta
+            sistemas complejos como ERPs y aplicaciones interactivas utilizando tecnologías como HTML, CSS, JavaScript,
+            React, Vue, Laravel y PHP.</p>
+        <p>Mi pasión por la tecnología comenzó desde joven, y a lo largo de mi carrera he tenido la oportunidad de
+            perfeccionar mis habilidades, tanto en desarrollo frontend como backend. Me especializo en crear
+            experiencias digitales intuitivas y eficientes, siempre buscando nuevas formas de mejorar el diseño y la
+            usabilidad.</p>
+        <p>Además de mi labor como desarrollador, he tenido la oportunidad de impartir cursos y actividades educativas,
+            donde he compartido mis conocimientos sobre programación, desarrollo web, y física aplicada a la ingeniería,
+            ayudando a otros a avanzar en sus carreras.</p>
+        <p>Mi enfoque siempre está en crear soluciones innovadoras y funcionales, con una visión clara hacia la mejora
+            continua y el aprendizaje constante.</p>
     </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <!-- Habilidades Técnicas -->
+            <div class="skills-technical">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <!-- CSS3 -->
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <!-- React -->
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <!-- Vue.js -->
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <!-- PHP -->
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+                    <!-- Laravel -->
+                    <div class="skill-item">
+                        <i class="fab fa-laravel"></i>
+                        <p>Laravel</p>
+                    </div>
+                    <!-- MySQL -->
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>MySQL</p>
+                    </div>
+                    <!-- Bootstrap -->
+                    <div class="skill-item">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <!-- Node.js -->
+                    <div class="skill-item">
+                        <i class="fab fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <!-- Git -->
+                    <div class="skill-item">
+                        <i class="fab fa-git"></i>
+                        <p>Git</p>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="skill-item">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <!-- MongoDB -->
+                    <div class="skill-item">
+                        <i class="fab fa-envira"></i>
+                        <p>MongoDB</p>
+                    </div>
+                    <!-- Python -->
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <!-- Docker -->
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <p>Docker</p>
+                    </div>
+                    <!-- WordPress -->
+                    <div class="skill-item">
+                        <i class="fab fa-wordpress"></i>
+                        <p>WordPress</p>
+                    </div>
+                    <!-- AWS -->
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <p>AWS</p>
+                    </div>
+                    <!-- Google Cloud -->
+                    <div class="skill-item">
+                        <i class="fab fa-google"></i>
+                        <p>Google Cloud</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades Blandas -->
+            <div class="skills-soft">
+                <h3>Habilidades Blandas</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Trabajo en equipo</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Creatividad</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-clipboard-list"></i>
+                        <p>Organización</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <p>Comunicación efectiva</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <p>Resolución de problemas</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Gestión del tiempo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+          <h2>Mis Pasatiempos</h2>
+          <div class="hobbies-grid">
+            <!-- Lectura -->
+            <div class="hobby-item">
+              <i class="fas fa-book"></i>
+              <p>Lectura</p>
+            </div>
+            <!-- Fotografía -->
+            <div class="hobby-item">
+              <i class="fas fa-camera"></i>
+              <p>Fotografía</p>
+            </div>
+            <!-- Música -->
+            <div class="hobby-item">
+              <i class="fas fa-music"></i>
+              <p>Música</p>
+            </div>
+            <!-- Viajes -->
+            <div class="hobby-item">
+              <i class="fas fa-plane"></i>
+              <p>Viajes</p>
+            </div>
+            <!-- Cocina -->
+            <div class="hobby-item">
+              <i class="fas fa-utensils"></i>
+              <p>Cocina</p>
+            </div>
+            <!-- Deporte -->
+            <div class="hobby-item">
+              <i class="fas fa-football-ball"></i>
+              <p>Deportes</p>
+            </div>
+            <!-- Tecnología -->
+            <div class="hobby-item">
+              <i class="fas fa-laptop-code"></i>
+              <p>Tecnología</p>
+            </div>
+            <!-- Cine -->
+            <div class="hobby-item">
+              <i class="fas fa-film"></i>
+              <p>Cine</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- <section id="hobbies-skills" class="hobbies-skills">
+        <h2>Pasatiempos y Habilidades Blandas</h2>
+        <p>Me encanta leer, aprender sobre tecnología y trabajar en equipo. Mis habilidades blandas incluyen
+            comunicación efectiva, adaptabilidad y resolución de problemas.</p>
+    </section> -->
 
     <section id="education" class="education">
         <h2>Formaciones y Cursos</h2>
-        <p>He completado cursos en desarrollo web, diseño de interfaces y programación en plataformas como Alura y otras academias reconocidas.</p>
+        <p>He completado cursos en desarrollo web, diseño de interfaces y programación en plataformas como Alura y otras
+            academias reconocidas.</p>
     </section>
 
     <section id="experience" class="experience">
         <h2>Experiencia en Programación</h2>
-        <p>He trabajado en proyectos utilizando tecnologías como HTML5, CSS3, JavaScript y frameworks como React y Vue.js. Cada proyecto me ha permitido aprender y mejorar mis habilidades técnicas.</p>
+        <p>He trabajado en proyectos utilizando tecnologías como HTML5, CSS3, JavaScript y frameworks como React y
+            Vue.js. Cada proyecto me ha permitido aprender y mejorar mis habilidades técnicas.</p>
     </section>
 
     <section id="contact" class="contact">
@@ -65,4 +297,5 @@
         <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
