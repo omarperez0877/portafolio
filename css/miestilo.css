@@ -356,7 +356,8 @@ section {
     align-items: stretch;
 }
 .contact-image img{
-    height: 600px;
+    height: 700px;
+    border-radius: 8px;
 }
 
 .contact-form {
