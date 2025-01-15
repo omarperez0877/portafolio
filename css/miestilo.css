@@ -252,13 +252,165 @@ section {
     line-height: 1.5;
 }
 
-
-
-.experience, .contact {
+/* Sección de experiencia profesional */
+.experience {
     background-color: #f4f4f4;
     margin-bottom: 1rem;
     border-radius: 5px;
     padding: 1rem;
+}
+
+.experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Proyectos */
+.project img {
+    flex: 1; /* Hace que la imagen ocupe el espacio restante */
+    height: 100%; /* Asegura que la altura de la imagen sea proporcional al contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarla */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Aseguramos que el contenedor sea responsivo */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.project-description h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #1e90ff;
+}
+
+.project-description p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Botones */
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-buttons .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project-buttons .btn:hover {
+    background-color: #0a74c9;
+}
+
+/* Estilo para la sección de contacto 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}/*
+
+/* Estilo para la sección de contacto */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: stretch;
+}
+.contact-image img{
+    height: 600px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact button:hover {
+    background-color: #0a74c9;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 footer {
@@ -274,8 +426,40 @@ footer {
         flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas medianas */
         max-width: calc(50% - 20px);
     }
+    .project {
+        flex-direction: column; /* Pone la imagen y la descripción una debajo de la otra */
+        align-items: center;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%; /* La imagen ocupará el 100% del ancho en pantallas pequeñas */
+        height: auto; /* Mantiene la proporción */
+    }
+    .project-buttons {
+        justify-content: center; /* Centra los botones */
+        gap: 1rem; /* Espacio entre los botones */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
+        margin-top: 1rem; /* Espaciado entre la descripción y los botones */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px; /* Espacio entre la imagen y el formulario */
+    }
+
+    .contact-image {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+
+    .contact-form {
+        width: 100%; /* El formulario ocupa el 100% del ancho del contenedor */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    }
 }
 
+
+/* Ajuste responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
     .education-item {
         flex: 1 1 100%; /* Una columna en pantallas pequeñas */
